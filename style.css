@@ -1,0 +1,95 @@
+*{
+/* *is universal selector */ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    
+    background: linear-gradient(45deg, #F9D5D3, #D3F6F3);
+
+
+    /* background: #f12711; Intense Orange */
+    /* background: linear-gradient(0deg, #ff5643 0%, #ffc64b 100%); Bright Yellow */
+}
+
+#main{
+    min-height: 100vh;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#addBtn{
+    position: fixed; /*position is fixed*/
+    right: 10px; /*positioning button from right at 10px*/
+    top: 10px;
+    color:azure;
+    background-color: black;
+    padding : 5px;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5px;
+    border-style:ridge;
+    cursor: pointer;
+}
+
+#addBtn:hover{
+    background-color:rgb(43, 40, 40) ;
+}
+
+.note{
+    background:transparent;
+    border-radius: 5px;
+    margin:15px;
+    border-radius: 5px;
+    overflow: hidden;/*hiding elements that spill outside the parent element's boundary.*/
+}
+
+.tool{
+
+
+    background-color: #003366; /* Vibrant Purple */
+    color: #ffffff;
+
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end; /*puts icon at end*/
+}
+
+.tool i{
+    padding: 5px;
+    cursor: pointer;
+}
+
+.tool i:hover{
+    color:wheat;
+}
+
+.note textarea{
+    width: 300px;
+    min-height: 220px;
+    resize: none; /*u can't resize it back using cursor*/
+    padding: 10px;
+    font-size: 16px;
+    overflow: hidden;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: none;
+
+    background-color: #69ff69; /* Teal */
+    color: #000000;
+
+
+}
+
+.note textarea:hover{
+    background-color: #8bff8b;
+}
